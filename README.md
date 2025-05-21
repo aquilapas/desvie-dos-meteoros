@@ -1,6 +1,4 @@
-from textwrap import dedent
 
-markdown_content = dedent("""
 # 🚀 Jogo "Desvie dos Meteoros" – Documentação do Código
 
 Este documento descreve em detalhes o funcionamento do código JavaScript do jogo “Desvie dos Meteoros”, com explicações linha por linha, marcações de **ADICIONADO** e **ALTERADO**, ideal para fins educacionais, apresentação de projeto ou versionamento.
