@@ -1,0 +1,49 @@
+/* Estilo geral do corpo da página */
+body {
+  font-family: sans-serif;     /* Define uma fonte simples e legível */
+  text-align: center;          /* Centraliza todo o conteúdo do corpo */
+  background: #000;            /* Define o fundo preto */
+  color: white;                /* Define a cor do texto como branco */
+  margin: 0;                   /* Remove margem padrão do navegador */
+}
+
+/* Área principal do jogo */
+#jogo {
+  position: relative;          /* Permite posicionamento absoluto dos elementos filhos */
+  width: 100vw;                /* Largura total da tela */
+  height: 90vh;                /* Altura de 90% da tela visível */
+  overflow: hidden;            /* Oculta partes de elementos que saem da área do jogo */
+  background: linear-gradient(to bottom, #111, #222); /* Fundo com gradiente escuro vertical */
+}
+
+/* Estilo compartilhado entre foguete e meteoro */
+#foguete, #meteoro {
+  position: absolute;          /* Permite mover os elementos livremente dentro do #jogo */
+  width: 60px;                 /* Define a largura dos dois elementos */
+}
+
+/* Estilo específico para o foguete */
+#foguete {
+  bottom: 20px;                /* Coloca o foguete a 20px da parte inferior */
+  left: 50%;                   /* Centraliza horizontalmente (base da centralização) */
+  transform: translateX(-50%);/* Corrige o alinhamento central com base na própria largura */
+}
+
+/* Estilo da mensagem exibida quando o jogador é atingido */
+#mensagemFim {
+  background: rgba(0, 0, 0, 0.85); /* Fundo preto semi-transparente */
+  padding: 30px;                   /* Espaçamento interno */
+  border-radius: 10px;             /* Cantos arredondados */
+  position: absolute;             /* Permite centralização absoluta */
+  top: 40%;                        /* Posiciona verticalmente no centro aproximado */
+  left: 50%;                       /* Posiciona horizontalmente no centro */
+  transform: translate(-50%, -50%);/* Centraliza exatamente no meio da tela */
+  color: red;                      /* Define a cor do texto como vermelha (alerta) */
+}
+
+/* ADICIONADO: Estilo para múltiplos meteoros e estrelas */
+.meteoro, .estrela {
+  position: absolute;
+  width: 40px;       /* Ajuste conforme necessário */
+  height: 40px;
+}

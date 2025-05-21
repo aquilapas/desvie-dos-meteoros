@@ -1,0 +1,43 @@
+<!-- Declaração do tipo de documento HTML5 -->
+<!DOCTYPE html>
+
+<!-- Início do documento HTML e definição do idioma como português do Brasil -->
+<html lang="pt-br">
+
+<head>
+  <!-- Define a codificação de caracteres como UTF-8 para suportar acentuação -->
+  <meta charset="UTF-8" />
+
+  <!-- Título da aba do navegador -->
+  <title>Desvie dos Meteoros</title>
+
+  <!-- Importa o arquivo de estilo CSS externo (style.css) -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Título principal da página, exibido no topo da tela -->
+  <h1>🚀 Desvie dos Meteoros!</h1>
+
+  <!-- Área principal do jogo onde o foguete e o meteoro vão se mover -->
+  <div id="jogo">
+    <!-- Imagem do foguete, com ID para que o JavaScript possa controlá-la -->
+    <img id="foguete" src="foguete.png" alt="foguete" />
+
+    <!-- Imagem do meteoro, também com ID para controle via JavaScript -->
+    <img id="meteoro" src="meteoro.png" alt="meteoro" />
+  </div>
+
+  <!-- Mensagem de fim de jogo, inicialmente escondida (display: none) -->
+  <div id="mensagemFim" style="display: none;">
+    <!-- Título que aparece quando o jogador é atingido -->
+    <h2>💥 Você foi atingido!</h2>
+
+    <!-- Botão que reinicia o jogo, chamando a função reiniciar() do script -->
+    <button onclick="reiniciar()">Jogar Novamente</button>
+  </div>
+
+  <!-- Importa o arquivo de JavaScript externo (script.js) que controla a lógica do jogo -->
+  <script src="script.js"></script>
+</body>
+</html>
